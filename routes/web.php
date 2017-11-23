@@ -86,3 +86,5 @@ Route::group(['prefix' => 'student'],function(){
         'uses' => 'StudentController@getStudentScore'])->where(['subject' => '(chinese|english|math)']);
 });
 
+//ch06練習三(3) : 新增路由'cool'
+Route::get('cool', 'Cool\TestController@indexc');
