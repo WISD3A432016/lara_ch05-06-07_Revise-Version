@@ -93,3 +93,6 @@ Route::group(['prefix' => 'student'],function(){
 Route::group(['namespace' => 'Cool'],function (){
     Route::get('cool', 'TestController@indexc');
 });
+
+//ch07練習二-3 : 增加路由'/board'，使之可執行BoardController的getIndex方法
+Route::get('/board', 'BoardController@getIndex');
